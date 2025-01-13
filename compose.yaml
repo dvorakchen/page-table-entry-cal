@@ -1,0 +1,10 @@
+name: page-table-cal
+services:
+  cal:
+    build:
+      context: .
+      target: final
+    container_name: page-table-cal
+    restart: unless-stopped
+    ports:
+      - 3033:80
